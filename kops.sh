@@ -17,10 +17,6 @@ export KOPS_STATE_STORE=s3://cloudanddevopsbyraham0073456.k8s.local
 kops create cluster --name rahams.k8s.local --zones us-east-1a --master-count=1 --master-size t2.medium --node-count=2 --node-size t2.medium
 kops update cluster --name rahams.k8s.local --yes --admin
 
-
-
-
-
 #Suggestions:
  # list clusters with: kops get cluster
  # edit this cluster with: kops edit cluster bhavya.k8s.local
