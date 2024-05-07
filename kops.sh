@@ -22,3 +22,10 @@ kops update cluster --name rahams.k8s.local --yes --admin
  # edit this cluster with: kops edit cluster bhavya.k8s.local
  # edit your node instance group: kops edit ig --name=bhavya.k8s.local nodes-us-east-1a
  # edit your master instance group: kops edit ig --name=bhavya.k8s.local master-us-east-1a
+ #after above (kops update cluster --name rahams.k8s.local --yes --admin)
+
+
+#cluster validation:
+#export KOPS_STATE_STORE=s3://cloudanddevopsbyraham0073456.k8s.local
+#kops validate cluster --wait 10m
+
